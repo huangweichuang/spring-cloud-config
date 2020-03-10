@@ -28,6 +28,7 @@ logging:
   level:
     cc.chuang: debug
 
-
+test:
+  name: admin
 
 
