@@ -29,6 +29,6 @@ logging:
     cc.chuang: debug
 
 test:
-  name: admin8888
+  name: admin
 
 
