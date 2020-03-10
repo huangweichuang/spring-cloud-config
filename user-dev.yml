@@ -1,0 +1,33 @@
+server:
+  port: ${port:9001}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://148.70.224.227:33306/springcloud
+    username: root
+    password: root
+  application:
+    name: user-service # 应用名称 服务id
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: cc.chuang.pojo
+
+#配置eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+
+logging:
+  level:
+    cc.chuang: debug
+
+
+
+
